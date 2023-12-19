@@ -55,7 +55,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <a href="#home" id="navbar__logo">RUSH WASH</a>
+        <a href="#home" id="navbar__logo">RUSHWASH</a>
         <div className={`navbar__toggle ${mobileMenuActive ? 'is-active' : ''}`} onClick={toggleMobileMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -71,9 +71,9 @@ function Navbar() {
           <li className={`navbar__item ${highlightedMenu === 'about-page' ? 'highlight' : ''}`}>
             <a href="#about" className="navbar__links" id="about-page">About</a>
           </li>
-          <li className="navbar__btn">
+          {/* <li className="navbar__btn">
             <a href="#sign-up" className="button" id="signup">Sign Up</a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
