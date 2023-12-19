@@ -131,7 +131,7 @@
 }
 
 .navbar__links:hover {
-  color: #f12711;
+  color: var(--clr-green2);
   transition: all 0.4s ease;
 }
 
@@ -278,7 +278,7 @@
 }
 
 .highlight {
-  border-bottom: 0.5pc solid rgb(247, 143, 39);
+  border-bottom: 0.5pc solid var(--clr-green2);
 }
 
 @media screen and (max-width: 768px) {
@@ -529,6 +529,7 @@
 }
 
 .services__card h1 {
+  background-image: linear-gradient(to right, var(--clr-green1), var(--clr-green2)); 
   text-align: center;
   font-size: 35px;
 }
@@ -580,9 +581,37 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1070px) {
   .services__wrapper {
-      grid-template-columns: 1fr;
+      grid-template-columns: 2fr;
+  }
+  .services__card {
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #000000, #000000, #000000);
+    background: linear-gradient(to right, #000000, #000000, #000000);
+    transition: 0.1s ease-in;
+    border: 0px solid #000000; 
+    box-shadow: 2px 2px 10px 0px rgb(46, 44, 44);
+  }
+
+  .services__card h1 {
+    background-image: linear-gradient(to right, var(--clr-green1), var(--clr-green2)); 
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .services__card p2 {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+    color: var(--clr-green2);
   }
   
 }
