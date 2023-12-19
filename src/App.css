@@ -583,13 +583,12 @@
 
 @media screen and (max-width: 1070px) {
   .services__wrapper {
-      grid-template-columns: 2fr;
-      grid-template-rows: 4fr;
+      grid-template-columns: 1fr 1fr;
   }
   .services__card {
     margin: 10px;
-    height: 200px;
-    width: 150px;
+    height: 230px;
+    width: 160px;
     border-radius: 22px;
     display: flex;
     flex-direction: column;
