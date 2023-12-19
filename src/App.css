@@ -582,7 +582,7 @@
 
 @media screen and (max-width: 1170px) {
   .services__wrapper {
-      display:flexbox;
+      display:flex;
       grid-template-columns: 1fr 1fr;
   }
   .services__card {
