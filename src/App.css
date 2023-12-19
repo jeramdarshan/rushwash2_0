@@ -18,6 +18,8 @@
   --clr-dark: #0d0c0c;
   --clr-accent: #0d64b6;
   --clr-orange: #f5af19;
+  --clr-green1: #55ca68;
+  --clr-green2: #7bec1e;
   /*font size*/
   --fs-h1: 5.0rem;
   --fs-h2: 2.25rem;
@@ -63,9 +65,9 @@
 }
 
 #navbar__logo {
-  background: #f12711;
-  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-  background: linear-gradient(to right, #f5af19, #f12711);
+  background: #7bec1e;
+  background: -webkit-linear-gradient(to right, var(--clr-green1), var(--clr-green2));
+  background: linear-gradient(to right, var(--clr-green1), var(--clr-green2));
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -122,8 +124,8 @@
   outline: none;
   border-radius: 4px;
   background: #f12711;
-  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-  background: linear-gradient(to right, #f5af19, #f12711);
+  background: -webkit-linear-gradient(to right,var(--clr-green1), var(--clr-green2));
+  background: linear-gradient(to right, var(--clr-green1), var(--clr-green2));
   color: #fff;
   transition: all 0.3s ease;
 }
@@ -254,9 +256,9 @@
 }
 
 .hero__heading span {
-  background: #f12711;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d);
-  background: linear-gradient(to right, #fcb045, #fd1d1d);
+  background: #7bec1e;
+  background: -webkit-linear-gradient(to right, var(--clr-green1), var(--clr-green2));
+  background: linear-gradient(to right, var(--clr-green1), var(--clr-green2));
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -267,8 +269,8 @@
 .hero__description {
   font-size: var(--fs-h2);
   background: #f12711;
-  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-  background: linear-gradient(to right, #f5af19, #f12711);
+  background: -webkit-linear-gradient(to right, var(--clr-green1), var(--clr-green2));
+  background: linear-gradient(to right, var(--clr-green1), var(--clr-green2));
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -279,7 +281,7 @@
   border-bottom: 0.5pc solid rgb(247, 143, 39);
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 768px) {
   .hero__heading {
       font-size: 60px;
   }
@@ -325,7 +327,7 @@
 
 .main__content h2 {
   font-size: 3rem;
-  background: #ffa722;
+  background: var(--clr-green1);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -493,8 +495,8 @@
 }
 
 .services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #f5af19 0%,#c13a01 100% );
+  background-color: #131313;
+  background-image: linear-gradient(to right, var(--clr-green1), var(--clr-green2)); 
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -546,7 +548,7 @@
   margin-top: 24px;
   font-size: 20px;
   font-weight: var(--fw-bold);
-  color: var(--clr-orange);
+  color: var(--clr-green2);
 }
 
 .services__btn {
@@ -580,7 +582,7 @@
 
 @media screen and (max-width: 1300px) {
   .services__wrapper {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
   }
   
 }
