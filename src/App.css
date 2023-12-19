@@ -604,13 +604,23 @@
   .services__card h1 {
     background-image: linear-gradient(to right, var(--clr-green1), var(--clr-green2)); 
     text-align: center;
-    font-size: 28px;
+    font-size: 12px;
+  }
+
+  .services__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 12px;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    padding: 10px;
+    color: var(--clr-light);
   }
 
   .services__card p2 {
     text-align: center;
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 10px;
     color: var(--clr-green2);
   }
   
