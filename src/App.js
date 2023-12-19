@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 import React from 'react';
@@ -6,7 +6,7 @@ import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Services from './components/services';
 import About from './components/about';
-import Feature from './components/feature';
+// import Feature from './components/feature';
 import Footer from './components/footer';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Hero />
       <Services />
       <About />
-      <Feature />
+      {/* <Feature /> */}
       <Footer />
     </React.Fragment>
   );
