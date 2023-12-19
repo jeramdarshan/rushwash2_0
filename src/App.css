@@ -706,7 +706,7 @@
 }
 
 #footer__logo {
-  color: rgb(244, 133, 42);
+  color: var(--clr-green2);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -737,11 +737,11 @@
 
 .footer__link--items h2 {
   margin-bottom: 16px;
-  color: rgb(255, 164, 54);
+  color: var(--clr-green2);
 }
 
 .footer__link--items a {
-  color: rgb(247, 140, 48);
+  color: var(--clr-green2);
   text-decoration: none;
   margin-bottom: 0.5rem;
   transition: 0.3 ease-in;
