@@ -7,7 +7,7 @@ function Services() {
       <div className="services__wrapper">
         <ServiceCard 
           title="The RUSH WASH " 
-          description="Foam wash, dyr, interior clean, vacuum, tyre polish, 
+          description="Foam wash, dry, interior clean, vacuum, tyre polish, 
                         windows inside & outside, car perfume" 
           price="Car: R150 || SUV: R180"/>
         <ServiceCard 
