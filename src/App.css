@@ -581,7 +581,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 960px) {
   .services__wrapper {
       grid-template-columns: 1fr 1fr;
   }
