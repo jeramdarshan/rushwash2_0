@@ -14,7 +14,7 @@
   --fw-reg: 300;
   --fw-bold: 800;
   /*colors*/
-  --clr-light: #ecdcdc;
+  --clr-light: #ffffff;
   --clr-dark: #cab8b8ee;
   --clr-accent: #0d64b6;
   --clr-orange: #f5af19;
@@ -22,6 +22,7 @@
   --clr-green2: #9ca198b6;
   --clr-navbarfont: #000000;
   --clr-navbarfontHover: #5f5656;
+  --clr-navbartogglebtn: #000000;
   /*font size*/
   --fs-h1: 5.0rem;
   --fs-h2: 2.25rem;
@@ -128,7 +129,7 @@
   background: #f12711;
   background: -webkit-linear-gradient(to right,var(--clr-green1), var(--clr-green2));
   background: linear-gradient(to right, var(--clr-green1), var(--clr-green2));
-  color: #fff;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
@@ -177,7 +178,7 @@
       height: 3px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background: #fff;
+      background: var(--clr-navbartogglebtn);
   }
 
   .navbar__item {
@@ -261,6 +262,18 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.hero__contact {
+  font-size: var(--fs-h3);
+  font-weight:1000;
+  margin-top: 18px;
+}
+
+.hero__icons {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .highlight {
