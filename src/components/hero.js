@@ -27,6 +27,7 @@ function Hero() {
               style={{ width: '40px', height: '40px', marginLeft: '5px'}} // Adjust the size as needed
             />
           </a>
+          <p> 073 913 3667 </p>
         </div>
 
       </div>

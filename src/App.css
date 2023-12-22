@@ -273,7 +273,14 @@
 .hero__icons {
   align-items: center;
   justify-content: center;
+  display: flex;
   margin-top: 10px;
+}
+
+.hero__icons p {
+  font-size: var(--fs-h4);
+  color: var(--clr-navbarfontHover);
+  margin-left: 10px;
 }
 
 .highlight {
