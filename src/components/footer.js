@@ -1,51 +1,39 @@
 import React from 'react';
+import insta__logo from "../media/instagram/insta__logo.png";
+import whatsapp__logo from "../media/WA/whatsapp__logo.png";
 
 function Footer() {
   return (
     <div className="footer__container">
-      <div className="footer__links">
-        <div className="footer__link--wrapper">
-          <div className="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/sign--up">How it works</a>
-            <a href="/sign--up">Pricelist</a>
-            <a href="/sign--up">Terms of Service</a>
-          </div>
-          <div className="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/sign--up">0739133667</a>
-          </div>
-        </div>
-        <div className="footer__link--wrapper">
-          <div className="footer__link--items">
-            <h2>Media</h2>
-            <a href="/sign--up">Pictures</a>
-            <a href="/sign--up">Videos</a>
-          </div>
-          <div className="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/sign--up">Instagram</a>
-            <a href="/sign--up">Whatsapp</a>
-            <a href="/sign--up">FaceBook</a>
-            <a href="/sign--up">TikTok</a>
-          </div>
-        </div>
-      </div>
+
       <section className="social__media">
         <div className="social__media--wrap">
           <div className="footer__logo">
             <a href="/" id="footer__logo">RUSHWASH</a>
+            <p className="website__rights">© RUSHWASH 2020. All rights reserved</p>
           </div>
-          <p className="website__rights">© RUSHWASH 2022. All rights reserved</p>
+          
           <div className="social__icons">
-            <a href="/" className="social__icon--link" target="_blank"><i className="fab fa-facebook"></i></a>
-            <a href="/" className="social__icon--link" target="_blank"><i className="fab fa-instagram"></i></a>
-            <a href="/" className="social__icon--link" target="_blank"><i className="fab fa-youtube"></i></a>
-            <a href="/" className="social__icon--link" target="_blank"><i className="fab fa-linkedin"></i></a>
-            <a href="/" className="social__icon--link" target="_blank"><i className="fab fa-twitter"></i></a>
+          <a href="https://wa.me/message/DS2QLPJGL3JQP1">
+            <img
+              src= {whatsapp__logo} 
+              alt="WhatsApp"
+              style={{ width: '40px', height: '40px', marginRight: '10px'}} // Adjust the size as needed
+            />
+            </a>
+            <a href="https://www.instagram.com/rushwash_mobile/">
+              <img
+                src= {insta__logo} 
+                alt="Instagram"
+                style={{ width: '40px', height: '40px', marginLeft: '10px'}} // Adjust the size as needed
+              />
+            </a>
+            <p>073 913 3667</p>
           </div>
+
         </div>
       </section>
+
     </div>
   );
 }

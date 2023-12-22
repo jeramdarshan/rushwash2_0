@@ -697,7 +697,7 @@
 /* Footer CSS */
 .footer__container {
   background-color: var(--clr-dark);
-  padding: 4rem 0;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -713,12 +713,12 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-weight: var(--fs-h1);
+  font-size: var(--fs-h2);
   display: flex;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  margin-right: 15px;
 }
 
 .footer__links {
@@ -771,22 +771,26 @@
 
 .social__media--wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 90%;
-  max-width: 1000px;
-  margin: 40px auto 0 auto;
 }
 
 .social__icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 240px;
 }
 
+.social__icons p {
+  font-size: var(--fs-h4);
+  color: var(--clr-navbarfontHover);
+  margin-left: 10px;
+}
+
 .website__rights {
   color: #fff;
+  font-size: var(--fs-h4);
 }
 
 @media screen and (max-width: 820px) {
