@@ -15,6 +15,7 @@
   --fw-bold: 800;
   /*colors*/
   --clr-light: #ffffffdc;
+  --clr-light_noOpacity: #ffffff;
   --clr-dark: #cab8b8ee;
   --clr-accent: #0d64b6;
   --clr-orange: #f5af19;
@@ -157,10 +158,11 @@
       top: -500px;
       transition: all 0.8s ease;
       border-radius: 12px;
+      box-shadow: var(--bs);
   }
 
   .navbar__menu.active {
-      background: var(--clr-dark);
+      background: var(--clr-light_noOpacity);
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;
