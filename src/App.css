@@ -14,14 +14,14 @@
   --fw-reg: 300;
   --fw-bold: 800;
   /*colors*/
-  --clr-light: #ffffff;
+  --clr-light: #ffffffdc;
   --clr-dark: #cab8b8ee;
   --clr-accent: #0d64b6;
   --clr-orange: #f5af19;
   --clr-green1: #757a76;
   --clr-green2: #9ca198b6;
   --clr-navbarfont: #000000;
-  --clr-navbarfontHover: #5f5656;
+  --clr-navbarfontHover: #9ca198b6;
   --clr-navbartogglebtn: #000000;
   /*font size*/
   --fs-h1: 5.0rem;
@@ -29,8 +29,8 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
   /*box shadow*/
-  --bs:   0.25em 0.25em 0.75em var(--clr-accent),
-          0.125em 0.125em 0.25em var(--clr-accent);
+  --bs:   0.25em 0.25em 0.75em var(--clr-dark),
+          0.125em 0.125em 0.25em var(--clr-dark);
 }
 
 /*change font size for bigger displays*/
@@ -44,7 +44,7 @@
 }
 
 .navbar {
-  background: var(--clr-dark);
+  background: var(--clr-light);
   height: 80px;
   width: 100%;
   position: fixed;
@@ -54,6 +54,8 @@
   padding-right: 30px;
   font-size: 1.2rem;
   z-index: 999;
+  border-radius: 0px;
+  box-shadow: var(--bs);
 }
 
 .navbar__container {
@@ -82,8 +84,6 @@
   text-decoration: none;
   font-size: 3rem;
 }
-
-
 
 .navbar__menu {
   display: flex;
@@ -279,7 +279,7 @@
 
 .hero__icons p {
   font-size: var(--fs-h4);
-  color: var(--clr-navbarfontHover);
+  color: var(--clr-navbarfont);
   margin-left: 10px;
 }
 
@@ -549,9 +549,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #000000, #000000, #000000);
-  background: linear-gradient(to right, #000000, #000000, #000000);
+  background: #ffffff;
   transition: 0.1s ease-in;
   border: 0px solid #000000; 
   box-shadow: 2px 2px 10px 0px rgb(46, 44, 44);
@@ -570,7 +568,7 @@
   font-family: var(--ff-secondary);
   font-weight: var(--fw-bold);
   padding: 10px;
-  color: var(--clr-light);
+  color: var(--clr-green1);
 }
 
 .services__card p2 {
@@ -578,7 +576,7 @@
   margin-top: 24px;
   font-size: 20px;
   font-weight: var(--fw-bold);
-  color: var(--clr-green2);
+  color: #000000;
 }
 
 .services__btn {
@@ -623,12 +621,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #000000, #000000, #000000);
-    background: linear-gradient(to right, #000000, #000000, #000000);
-    transition: 0.1s ease-in;
-    border: 0px solid #000000; 
-    box-shadow: 2px 2px 10px 0px rgb(46, 44, 44);
   }
 
   .services__card h1 {
@@ -644,14 +636,12 @@
     font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
     padding: 10px;
-    color: var(--clr-light);
   }
 
   .services__card p2 {
     text-align: center;
     margin-top: 12px;
     font-size: 10px;
-    color: var(--clr-green2);
   }
   
 }
@@ -665,16 +655,6 @@
   margin: 8px;
   height: 280px;
   width: 170px;
-  border-radius: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #000000, #000000, #000000);
-  background: linear-gradient(to right, #000000, #000000, #000000);
-  transition: 0.1s ease-in;
-  border: 0px solid #000000; 
-  box-shadow: 2px 2px 10px 0px rgb(46, 44, 44);
 }
 
 .services__card h1 {
@@ -690,14 +670,12 @@
   font-family: var(--ff-secondary);
   font-weight: var(--fw-bold);
   padding: 10px;
-  color: var(--clr-light);
 }
 
 .services__card p2 {
   text-align: center;
   margin-top: 12px;
   font-size: 14px;
-  color: var(--clr-green2);
 }
 }
 
@@ -755,7 +733,7 @@
 }
 
 .footer__link--items a {
-  color: var(--clr-navbarfontHover);
+  color: var(--clr-navbarfont);
   text-decoration: none;
   margin-bottom: 0.5rem;
   transition: 0.3 ease-in;
@@ -791,7 +769,7 @@
 
 .social__icons p {
   font-size: var(--fs-h4);
-  color: var(--clr-navbarfontHover);
+  color: var(--clr-navbarfont);
   margin-left: 10px;
 }
 
