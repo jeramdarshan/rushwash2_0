@@ -1,5 +1,5 @@
 import React from 'react';
-import logoimg from '../media/bakkie1.jpg'
+import logoimg from '../media/bakkie2.jpg'
 
 function About() {
   return (
@@ -11,7 +11,7 @@ function About() {
         
         <div className="main__content">
           <h1>About</h1>
-          <p>RUSH WASH MOBILE was started in 2020 by Rushil Makan.</p>
+          <p>RUSHWASH MOBILE was started in 2020 by Rushil Makan.</p>
         </div>
 
       </div>
