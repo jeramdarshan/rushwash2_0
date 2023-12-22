@@ -15,7 +15,7 @@
   --fw-bold: 800;
   /*colors*/
   --clr-light: #ecdcdc;
-  --clr-dark: #cab8b8cb;
+  --clr-dark: #cab8b8ee;
   --clr-accent: #0d64b6;
   --clr-orange: #f5af19;
   --clr-green1: #757a76;
@@ -151,11 +151,10 @@
       display: grid;
       grid-template-columns: auto;
       margin: 15px;
-      width: 95%;
+      width: 92%;
       position: absolute;
       top: -500px;
       transition: all 0.8s ease;
-      z-index: -1;
       border-radius: 12px;
   }
 
@@ -209,7 +208,6 @@
   #mobile-menu {
       position: absolute;
       top: 20%;
-      right: 5%;
   }
 
   .navbar__toggle .bar {
